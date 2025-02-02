@@ -1,0 +1,37 @@
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.weather-form {
+    margin-bottom: 20px;
+}
+
+.weather-current, .weather-forecast {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forecast-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.forecast-day {
+    flex: 1 1 calc(20% - 10px);
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Адаптивное поведение */
+@media (max-width: 600px) {
+    .forecast-day {
+        flex: 1 1 100%;
+    }
+}
